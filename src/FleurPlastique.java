@@ -1,5 +1,5 @@
 public class FleurPlastique extends Fleur{
-    protected String matiere;
+    private String matiere;
     public FleurPlastique(String nom, String couleur, double prix, int taille, String matiere){
         super(nom,prix,couleur,taille);
         this.matiere = matiere;
@@ -78,6 +78,6 @@ public class FleurPlastique extends Fleur{
      */
     @Override
     public void showProduct() {
-        System.out.println(nom+" : coûte "+prix+" euro\n"+"Elle est de couleur "+couleur+", elle mesure "+ taille + " et est fait de " + matiere);
+        System.out.println(nom+" : coûte "+prix+" euro\n"+"Elle est de couleur "+couleur+", elle mesure "+ taille + " et est fait de " + matiere + "\n");
     }
 }

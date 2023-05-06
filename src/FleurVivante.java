@@ -123,10 +123,6 @@ public class FleurVivante extends Fleur {
      */
     @Override
     public void showProduct() {
-        if (vivant == false){
-            System.out.println("La fleur a fané est ne peut pas être vendu.");
-            return;
-        }
-        System.out.println(nom+" : coûte "+prix+" euro\n"+"Elle est de couleur "+couleur+", elle a " + age + " ans, mesure "+ taille + " cm et peut durer "+dureeVie+" en bouquet.");
+        System.out.println(nom+" : coûte "+prix+" euro\n"+"Elle est de couleur "+couleur+", elle a " + age + " ans, mesure "+ taille + " cm et peut durer "+dureeVie+" en bouquet.\n");
     }
 }
