@@ -1,4 +1,4 @@
-public class FleurVivanteFactory implements FleurAbstractFactory{
+public class FleurVivanteFactory implements FleurFactory{
     /**
      * Permet de créer un nouvelle instance de la classe FleurVivante
      *
