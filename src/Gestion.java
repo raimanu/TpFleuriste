@@ -1,3 +1,6 @@
+/**
+ * La classe Gestion qui permet de voir comment le programme marche
+ */
 public class Gestion {
     public static void main(String[] args) {
         FleurVivanteFactory tulipeFactory = new FleurVivanteFactory();

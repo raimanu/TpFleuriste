@@ -1,5 +1,22 @@
+/**
+ * La classe FleurPlastique représente une fleur en plastique.
+ * Cette classe étend la classe Fleur pour hériter de ses propriétés et ajoute une propriété matière.
+ */
 public class FleurPlastique extends Fleur{
+    /**
+     * La matière de la fleur
+     */
     private String matiere;
+
+    /**
+     * Constructeur de la classe FleurPlastique
+     *
+     * @param nom Le nom de la Fleur
+     * @param couleur La couleur de la Fleur
+     * @param prix Le prix de la Fleur
+     * @param taille La taille de la Fleur
+     * @param matiere La matière de la Fleur
+     */
     public FleurPlastique(String nom, String couleur, double prix, int taille, String matiere){
         super(nom,prix,couleur,taille);
         this.matiere = matiere;
@@ -65,10 +82,20 @@ public class FleurPlastique extends Fleur{
         return taille;
     }
 
+    /**
+     * Permet de changer la matière de la Fleur
+     *
+     * @param NvMatiere La nouvelle matière de la Fleur
+     */
     public void setMatiere(String NvMatiere) {
         this.matiere = NvMatiere;
     }
 
+    /**
+     * Renvoie la matière de la Fleur
+     *
+     * @return La matière de la Fleur
+     */
     public String getMatiere() {
         return matiere;
     }

@@ -1,7 +1,31 @@
+/**
+ * La classe FleurVivante représente une fleur vivante.
+ * Cette classe étend la classe Fleur pour hériter de ses propriétés et ajoute une propriété age, dureeVie et vivant.
+ */
 public class FleurVivante extends Fleur {
+    /**
+     * L'age de la fleur
+     */
     protected int age;
+    /**
+     * La durée de vie de la fleur
+     */
     protected String dureeVie;
+    /**
+     * Si la fleur est vivante ou non
+     */
     protected boolean vivant = true;
+
+    /**
+     * Le constructeur de la classe FleurVivante
+     *
+     * @param nom Le nom de la Fleur
+     * @param couleur La couleur de la Fleur
+     * @param prix Le prix de la Fleur
+     * @param age L'age de la Fleur
+     * @param dureeVie La durée de vie de la Fleur
+     * @param taille La taille de la Fleur
+     */
     public FleurVivante(String nom, String couleur, double prix, int age, String dureeVie, int taille){
         super(nom,prix,couleur,taille);
         this.age = age;
@@ -18,6 +42,7 @@ public class FleurVivante extends Fleur {
 
     /**
      *Renvoie le prix de la Fleur
+     *
      * @return Le prix de la Fleur de type double
      */
     @Override
@@ -102,7 +127,7 @@ public class FleurVivante extends Fleur {
     }
 
     /**
-     * Fait mourir la Fleur en changeant sa variable vivant à false.
+     * Fait mourir la Fleur en changeant sa variable vivant en false.
      */
     public void faner(){
         this.vivant = false;

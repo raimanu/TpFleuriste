@@ -1,13 +1,26 @@
+/**
+ * La classe Fleur représente une fleur.
+ */
 public abstract class Fleur {
+
+    /** Le nom de la fleur */
     protected String nom;
+
+    /** Le prix de la fleur */
     protected double prix;
+
+    /** La couleur de la fleur */
     protected String couleur;
+
+    /** La taille de la fleur */
     protected int taille;
 
     /**
-     * Le constructeur de la classe Fleur
-     * @param nom Le nom de la Fleur
-     * @param prix Le prix de la Fleur
+     * Le constructeur de la classe Fleur.
+     * @param nom Le nom de la fleur.
+     * @param prix Le prix de la fleur.
+     * @param couleur La couleur de la fleur.
+     * @param taille La taille de la fleur.
      */
     public Fleur(String nom, double prix, String couleur, int taille){
         this.nom = nom;

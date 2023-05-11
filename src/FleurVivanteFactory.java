@@ -1,3 +1,8 @@
+/**
+ * Cette classe implémente l'interface FleurFactory et permet de créer des instances de la classe FleurVivante.
+ * Elle offre deux méthodes, une pour créer une FleurVivante et une autre pour créer une FleurPlastique,
+ * qui est ici renvoyée comme null car elle ne peut pas être créée ici.
+ */
 public class FleurVivanteFactory implements FleurFactory{
     /**
      * Permet de créer un nouvelle instance de la classe FleurVivante

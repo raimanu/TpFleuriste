@@ -1,3 +1,8 @@
+/**
+ * Cette classe implémente l'interface FleurFactory et permet de créer des instances de la classe FleurPlastique.
+ * Elle offre deux méthodes, une pour créer une FleurPlastique et une autre pour créer une FleurVivante,
+ * qui est ici renvoyée comme null car elle ne peut pas être créée ici.
+ */
 public class FleurPlastiqueFactory implements FleurFactory{
     /**
      * Permet de créer un nouvelle instance de la classe FleurVivante
@@ -8,7 +13,7 @@ public class FleurPlastiqueFactory implements FleurFactory{
      * @param age L'age de la Fleur
      * @param dureeVie La duree de vie de la Fleur en bouquet
      * @param taille La taille de la Fleur
-     * @return Rien car nous ne pouvons pas créer de fleur en vivante ici
+     * @return Rien car nous ne pouvons pas créer de fleur vivante ici
      */
     @Override
     public FleurVivante creerFleurVivante(String nom, String couleur, double prix, int age, String dureeVie, int taille) {
