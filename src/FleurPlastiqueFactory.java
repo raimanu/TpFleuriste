@@ -4,6 +4,11 @@
  * qui est ici renvoyée comme null car elle ne peut pas être créée ici.
  */
 public class FleurPlastiqueFactory implements FleurFactory{
+
+    /**
+     * Constructeur de la class FleurPlastiqueFactory
+     */
+    public FleurPlastiqueFactory(){}
     /**
      * Permet de créer un nouvelle instance de la classe FleurVivante
      *
