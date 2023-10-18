@@ -1,9 +1,10 @@
+import view.HomeView;
 /**
  * La classe Gestion qui permet de voir comment le programme marche
  */
 public class Gestion {
     public static void main(String[] args) {
-        FleurVivanteFactory tulipeFactory = new FleurVivanteFactory();
+        /*FleurVivanteFactory tulipeFactory = new FleurVivanteFactory();
         FleurPlastiqueFactory fleurPlastiqueFactory = new FleurPlastiqueFactory();
         Commande commande = new Commande();
         FleurVivante tulipe = tulipeFactory.creerFleurVivante("tulipe", "mauve", 100, 2,"2 semaine", 20);
@@ -26,6 +27,9 @@ public class Gestion {
         commande.etatSuivant();
         commande.efface();
         System.out.println("La commande est en état livrée, et donc la méthode efface ne fera rien\n");
-        commande.showProducts();
+        commande.showProducts();*/
+
+        new HomeView();
+
     }
 }
